@@ -1,0 +1,92 @@
+html, body {
+    height:100%;
+} 
+
+body{
+    background: -moz-linear-gradient(white 90%, lightblue) ;
+	background-size: auto 100%;
+    background-repeat: no-repeat;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: smaller;
+}
+
+#login-dropdown-list{
+	position:relative;
+	top:-2px;
+}
+
+login-buttons{
+	float:right;
+	font-weight:bold;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  padding: 4px 8px;
+
+  font-size: 80%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  text-align: center;
+  color: #fff;
+
+  background: #596595;
+  border: 1px solid #4c5780;
+
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background: #7580ac;
+}
+
+button[type="submit"]:active {
+    background: #7580ac;
+}
+
+.postInfo{
+	text-align: right;
+	font-style: italic;
+}
+
+.create{
+	text-align: right;
+	float:right;
+}
+
+.post{
+  list-style-position:inside;
+  border-bottom: 1px solid #4c5780;
+  margin-bottom: 5px;
+}
+
+ol {
+  font: italic 1em Georgia, Times, serif;
+  color: #999999;
+}
+
+ol p {
+  font: normal 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+
+input[type="text"] {
+  border: 1px solid #4c5780;
+  border-radius: 4px;	
+}
+
+textarea{
+  border: 1px solid #4c5780;
+  border-radius: 4px;	
+}
+
+h2{
+	margin-bottom: 5px;
+}
+

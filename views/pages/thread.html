@@ -1,0 +1,22 @@
+<div class="page">
+    <h2>{{ thread.content }}</h2>
+    <p>Autor vlákna: {{ thread.author }}
+	  </br>
+	  Vytvořeno: {{ thread.createdAt | date:'d.M.yyyy HH:mm' }}</p>
+    
+    <ol type="1">
+        <li class="post" ng-repeat="post in posts">
+            <p ng-bind="post.content"></p>
+              <div class="postInfo">{{ post.author }}, {{ post.createdAt | date:'d.M.yyyy HH:mm' }}</div>
+        </li>
+    </ol>
+	
+  <div class="create">
+    <h2>Odpovědět</h2>
+	<textarea rows="4" cols="50" name="comment" form="createForm" ng-model="post.content">
+		Vaše odpověď...</textarea>
+    <form id="createForm" ng-submit="createPost(post)">
+        <button type="submit">Odeslat</button>
+    </form>
+  </div>
+</div>
